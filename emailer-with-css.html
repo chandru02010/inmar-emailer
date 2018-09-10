@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- If IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<style type="text/css">
+	body {
+		padding: 0;
+		margin: 0;
+		font-family: sans-serif;
+	}
+	td {
+		border: 0px;
+	}
+	td[ class="product-vspacer"] {
+		width: 5% !important;
+		display: inline-block !important;
+		float: left !important;
+	}
+	@media screen and (max-width: 799px) {
+		table[class="responsive-table"] {
+			width: 100% !important;
+			/* display: block !important; */
+		}
+		table[class="responsive-table-child"] {
+			width: 90% !important;
+		}
+		img[class="responsive-image"] {
+			width: 100% !important;
+			height: auto !important;
+		}
+		img[class="auto-height"] {
+			height: auto !important;
+		}
+		td[class="tableview-bg-banner"],
+		div[class="tableview-bg-banner"] {
+			width: 100% !important;
+			height: 140px !important;
+			max-height: 140px !important;
+		}
+		td[class="welcome-bg-banner"],
+		div[class="welcome-bg-banner"] {
+			width: 100% !important;
+			max-height: 100px !important;
+			height: auto !important;
+		}
+		td[class="chill-wrapper"] {
+			width: 25% !important;
+		}
+		img[class="chill-img"] {
+			max-height: 100px !important;
+			width: 100% !important;
+			height: auto !important;
+		}
+		td[class="logo-wrapper"] {
+			width: 50% !important;
+		}
+		img[class="logo-img"] {
+			max-height: 100px !important;
+			width: 100% !important;
+			height: auto !important;
+		}
+		td[class="pepper-wrapper"] {
+			width: 25% !important;
+		}
+		img[class="pepper-img"] {
+			max-height: 100px !important;
+			width: 100% !important;
+			height: auto !important;
+		}
+		font[class="tableview-title"] {
+			font-size: 32px !important;
+		}
+		font[class="tableview-sub-title"] {
+			font-size: 14px !important;
+		}
+		td[class="process-bg-banner"] {
+			height: 290px !important;
+		}
+		font[class="process-title"] {
+			font-size: 18px !important;
+		}
+		font[class="process-sub-title"] {
+			font-size: 16px !important;
+			padding-bottom: 40px !important;
+		}
+		img[class="process-icon-img"] {
+			width: 80px !important;
+			height: 80px !important;
+		}
+		font[class="process-icon-name"] {
+			font-size: 16px !important;
+		}
+		font[class="process-icon-line"] {
+			font-size: 24px !important;
+		}
+
+		tr[class="products-wrapper"] {
+			display: block !important;
+		}
+		td[class="product-item"] {
+			width: 48% !important;
+		}
+		td[class="product-item-second"] {
+			width: 48% !important;
+			margin-right: 0 !important;
+		}
+		td[class="product-item-fourth"] {
+			width: 48% !important;
+			margin-left: 3% !important;
+		}
+		td[class="product-item-fifth"] {
+			width: 48% !important;
+			margin-right: 3% !important;
+			margin-left: 0px !important;
+		}
+		table[class="responsive-table-90"] {
+			width: 90% !important;
+		}
+		td[class="basil-img-wrapper"] {
+			display: none!important;
+		}
+		table[class="bg-total-border-wrapper"] {
+			margin-top:30px !important;
+			width: 90% important;
+		}
+		font[class="social-icon-name"] {
+			font-size: 18px !important;
+			text-align: left;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		font[class="tableview-title"] {
+			font-size: 24px !important;
+		}
+		font[class="tableview-sub-title"] {
+			font-size: 13px !important;
+		}
+		td[class="welcome-bg-banner"],
+		div[class="welcome-bg-banner"] {
+			width: 100% !important;
+			max-height: 68px !important;
+			height: auto !important;
+		}
+		img[class="chill-img"],
+		img[class="logo-img"],
+		img[class="pepper-img"] {
+			max-height: 68px !important;
+		}
+		td[class="process-bg-banner"] {
+			height: 250px !important;
+		}
+		font[class="process-title"] {
+			font-size: 16px !important;
+		}
+		font[class="process-sub-title"] {
+			font-size: 14px !important;
+			padding-bottom: 20px !important;
+		}
+		img[class="process-icon-img"] {
+			width: 50px !important;
+			height: 50px !important;
+		}
+		font[class="process-icon-name"] {
+			font-size: 13px !important;
+		}
+		font[class="process-icon-line"] {
+			font-size: 18px !important;
+		}
+		td[class="product-item"],
+		td[class="product-item-second"],
+		td[class="product-item-fourth"],
+		td[class="product-item-fifth"] {
+			width: 100% !important;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+		td[class="social-feedback-img"] {
+			width: 35px !important;
+		}
+		td[class="social-icons-wrapper"] {
+			width: 50px !important;
+		}
+		img[class="social-icons-img"],
+		a[class="social-icon-link"] {
+			width: 35px !important;
+			height: 35px !important;
+		}
+		td[class="social-icon-name-wrapper"] {
+			text-align: left !important;
+			padding-left: 10px !important;
+		}
+
+	}
+
+	</style>
+</head>
+<body style="background-color: #f0f0f0;">
+<!-- Full width container -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f0f0f0">
+	<tr>
+		<td align="center">
+			<!-- 800px container -->
+			<table width="800" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
+				<tr>
+					<td background="assets/bg_offer_header@2x.png" style="background:url(assets/bg_offer_header@2x.png) center/cover;background-image:url(assets/bg_offer_header@2x.png);background-size:100%;background-size:cover; border:0px; height:188px; padding: 0px; margin: 0px" height="188" bgcolor="#ffffff" border="0" valign="top" align="center" class="welcome-bg-banner">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+							<v:fill type="tile" src="assets/bg_offer_header@2x.png" color="#ffffff" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						<![endif]-->
+						<div style="height: 188px; width: 100%; margin: 0px auto; padding: 0px" class="welcome-bg-banner">
+							<table width="800" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
+								<tr>
+									<td valign="top" align="left" class="chill-wrapper">
+										<img src="assets/img_red_chili@2x.png" alt="Red chilli" width="216" height="188" style="max-width: 216px; width: 100%; hieght: auto; border:0px" border="0" class="chill-img">
+									</td>
+									<td valign="middle" align="center" class="logo-wrapper">
+										<img src="assets/logo_spartannash@2x.png" alt="Logo" width="344" height="86" style="max-width: 344px; width: 100%; hieght: auto; border:0px" border="0" class="logo-img">
+									</td>
+									<td valign="bottom" align="right" class="pepper-wrapper">
+										<img src="assets/img_yellow_pepper@2x.png" alt="Yellow pepper" width="235" height="139" style="max-width: 235px; width: 100%; hieght: auto; border:0px" border="0" class="pepper-img">
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if gte mso 9]>
+							</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td background="assets/img_tableview@2x.png" style="background:url(assets/img_tableview@2x.png) center/cover;background-image:url(assets/img_tableview@2x.png);background-size:100%;background-size:cover; border:0px; height:208px;" height="208" bgcolor="#a68267" valign="middle" align="center" class="tableview-bg-banner">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+							<v:fill type="tile" src="assets/img_tableview@2x.png" color="#016a54" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						<![endif]-->
+						<div style="width: 100%; margin: 0px auto; padding: 0px">
+							<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 42px; display: block; margin: 0px auto; padding:10px 0px;" class="tableview-title">Personalized Prices</font>
+							<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 16px; display: block; text-transform: uppercase; margin: 0px auto; padding: 0px;" class="tableview-sub-title">Special prices just for you</font>
+
+						</div>
+						<!--[if gte mso 9]>
+							</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td background="assets/bg_offer_header@2x.png" style="background:url(assets/bg_process@2x.png) center/cover;background-image:url(assets/bg_process@2x.png);background-size:100%;background-size:cover; border:0px; height:370px;" height="370" bgcolor="#016a54" valign="top" align="center" class="process-bg-banner">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+							<v:fill type="tile" src="assets/bg_process@2x.png" color="#7bceeb" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						<![endif]-->
+						<div>
+							<table width="90%" cellspacing="0" cellpadding="0" border="0" class="responsive-table-child">
+								<tr>
+									<td align="center" colspan="5">
+										<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 24px; display: block; margin: 0px auto; padding:30px 0px 10px 0px;" class="process-title">Laura, your PERSONALIZED prices are here!</font>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="5">
+										<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #f5d018; font-size: 18px; display: block; margin: 0px auto; padding:10px 0px 60px 0px;" class="process-sub-title">Prices are good through July 9, 2018</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="20%" align="center" valign="top">
+										<img src="assets/ic_shop@2x.png" alt="Logo" width="100" height="100" style="max-width: 100px; width: 100px; hieght: 100px; border:0px" border="0" class="process-icon-img">
+										<br>
+										<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; display: block; margin: 0px auto; padding:10px 0px; text-transform: uppercase;" class="process-icon-name">Shop</font>
+
+									</td>
+									<td width="14%" align="center" valign="top">
+										<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 36px; display: block; margin: 0px auto; padding:15px 0px 10px 0px; text-transform: uppercase; line-height: 1.2" class="process-icon-line"> ........ </font>
+									</td>
+									<td width="32%" align="center" valign="top">
+										<img src="assets/ic_card@2x.png" alt="Logo" width="100" height="100" style="max-width: 100px; width: 100px; hieght: 100px; border:0px" border="0" class="process-icon-img">
+										<br>
+										<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; display: block; margin: 0px auto; padding:10px 0px; text-transform: uppercase;" class="process-icon-name">Scan Loyality Card</font>
+									</td>
+									<td width="14%" align="center" valign="top">
+										<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 36px; display: block; margin: 0px auto; padding:15px 0px 10px 0px; text-transform: uppercase; line-height: 1.2" class="process-icon-line"> ........ </font>
+									</td>
+									<td width="20%" align="center" valign="top">
+										<img src="assets/ic_save@2x.png" alt="Logo" width="100" height="100" style="max-width: 100px; width: 100px; hieght: 100px; border:0px" border="0" class="process-icon-img">
+										<br>
+										<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; display: block; margin: 0px auto; padding:10px 0px; text-transform: uppercase;" class="process-icon-name">Save</font>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if gte mso 9]>
+							</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td style="border:0px; background-color: #f6f6f6;" bgcolor="#f6f6f6" valign="top" align="center" class="products-banner">
+							<table width="90%" cellspacing="0" cellpadding="0" border="0">
+								<tr height="20" style="20px">
+									<td colspan="5">&nbsp;</td>
+								</tr>
+								<tr class="products-wrapper" style="display: block;">
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1); -moz-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1); box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item">
+
+										<table width="86%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-one">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_tomato@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">10% OFF</font>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #b30404; font-size: 18px; display: block; margin: 0px auto; padding: 0px 0px 20px 0px;" class="product-savings">You save $0.15/lb</font>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Red Tomatoes</font>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+
+									<!-- <td width="5%" style="width: 5%;" class="product-vspacer"></td> -->
+
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px;  margin-left: 3%; margin-right: 3%; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item-second">
+
+
+										<table width="86%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-one">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_onion@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">10% OFF</font>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #b30404; font-size: 18px; display: block; margin: 0px auto; padding: 0px 0px 20px 0px;" class="product-savings">You save $0.15/lb</font>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Red Onions</font>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+
+									<!-- <td width="5%" style="width: 5%;" class="product-vspacer"></td> -->
+
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item">
+
+										<table width="100%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-two">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_tomato@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td background="assets/tag_your_price.png" style="background:url(assets/tag_your_price@2x.png) center/cover;background-image:url(assets/tag_your_price@2x.png);background-size:100%;background-size:109px 26px; background-position: left top;background-repeat: no-repeat; border:0px; height:26px; padding: 0px; margin: 0px" height="26" bgcolor="#ffffff" height="26" border="0" valign="top" align="left" class="your-price-tag">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+														<v:fill type="tile" src="assets/tag_your_price.png" color="#ffffff" />
+														<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+													<![endif]-->
+													<div style="height: 26px; width: 109px; margin: 0px; padding: 0px; float: left;" class="your-price-tag">
+														<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 14px; line-height: 14px; display: block; margin: 0px auto; padding: 7px 5px 3px 5px;" class="product-offer-text">YOUR OFFER</font>
+													</div>
+													<!--[if gte mso 9]>
+														</v:textbox>
+													</v:rect>
+													<![endif]-->
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<table width="86%" cellspacing="0" cellpadding="0" border="0" class="responsive-table-child">
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">$2.79</font>
+																<strike style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #b30404; font-size: 18px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-price">$3.49</strike>
+															</td>
+														</tr>
+
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Lay's Kettle cooked Jalpeno Potato chips 8 <br>oz</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+									<!-- <td width="5%" style="width: 5%;" class="product-vspacer"></td> -->
+
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1); -moz-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1); box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item-fourth">
+
+										<table width="100%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-two">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_kraft@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td background="assets/tag_your_price.png" style="background:url(assets/tag_your_price@2x.png) center/cover;background-image:url(assets/tag_your_price@2x.png);background-size:100%;background-size:109px 26px; background-position: left top;background-repeat: no-repeat; border:0px; height:26px; padding: 0px; margin: 0px" height="26" bgcolor="#ffffff" height="26" border="0" valign="top" align="left" class="your-price-tag">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+														<v:fill type="tile" src="assets/tag_your_price.png" color="#ffffff" />
+														<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+													<![endif]-->
+													<div style="height: 26px; width: 109px; margin: 0px; padding: 0px; float: left;" class="your-price-tag">
+														<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 14px; line-height: 14px; display: block; margin: 0px auto; padding: 7px 5px 3px 5px;" class="product-offer-text">YOUR OFFER</font>
+													</div>
+													<!--[if gte mso 9]>
+														</v:textbox>
+													</v:rect>
+													<![endif]-->
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<table width="86%" cellspacing="0" cellpadding="0" border="0" class="responsive-table-child">
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">$3.99</font>
+																<strike style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #b30404; font-size: 18px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-price">$4.49</strike>
+															</td>
+														</tr>
+
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Craft Grated Parmesan Cheese
+																<br>8 oz</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+
+
+									<!-- <td width="5%" style="width: 5%;" class="product-vspacer"></td> -->
+
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px; margin-left: 3%; margin-right: 3%; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item-fifth">
+
+										<table width="100%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-two">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_ritz@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td background="assets/tag_your_price.png" style="background:url(assets/tag_your_price@2x.png) center/cover;background-image:url(assets/tag_your_price@2x.png);background-size:100%;background-size:109px 26px; background-position: left top;background-repeat: no-repeat; border:0px; height:26px; padding: 0px; margin: 0px" height="26" bgcolor="#ffffff" height="26" border="0" valign="top" align="left" class="your-price-tag">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+														<v:fill type="tile" src="assets/tag_your_price.png" color="#ffffff" />
+														<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+													<![endif]-->
+													<div style="height: 26px; width: 109px; margin: 0px; padding: 0px; float: left;" class="your-price-tag">
+														<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff; font-size: 14px; line-height: 14px; display: block; margin: 0px auto; padding: 7px 5px 3px 5px;" class="product-offer-text">YOUR OFFER</font>
+													</div>
+													<!--[if gte mso 9]>
+														</v:textbox>
+													</v:rect>
+													<![endif]-->
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<table width="86%" cellspacing="0" cellpadding="0" border="0" class="responsive-table-child">
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">$1.99</font>
+																<strike style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #b30404; font-size: 18px; display: inline-block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-price">$3.99</strike>
+															</td>
+														</tr>
+
+														<tr>
+															<td align="left">
+																<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Ritz Crisp and Thin Sea Salt Oven Baked Potato &amp; Wheat Chips
+																<br>7.1 oz</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+
+									<!-- <td width="5%" style="width: 5%;" class="product-vspacer"></td> -->
+
+									<td width="33%" align="center" style="display: inline-block;  float: left;  width: 31%;  background-color: #ffffff; overflow: hidden; height: 360px; margin-bottom: 20px; border-radius: 5px; -webkit-box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);" class="product-item">
+
+
+										<table width="86%" cellspacing="0" cellpadding="0" border="0" class="product-table-type-one">
+											<tr>
+												<td valign="top" align="center">
+													<img src="assets/img_vita@2x.png" alt="Logo" width="180" height="180" style="max-width: 180px; width: 180px; hieght: 180px; border:0px" border="0" class="products-img">
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 32px; display: block; margin: 0px auto; padding: 20px 0px 10px 0px;" class="product-offer">SAVE $1.00</font>
+												</td>
+											</tr>
+											<!-- <tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #b30404; font-size: 18px; display: block; margin: 0px auto; padding: 0px 0px 20px 0px;" class="product-savings">You save $0.15/lb</font>
+												</td>
+											</tr> -->
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 18px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-regular-price">Regular price $1.99</font>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 14px; display: block; margin: 0px auto; padding: 0px 0px 10px 0px;" class="product-name">Vita Coco Coconut Water 16.9 fl oz</font>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+
+								</tr>
+								<!-- <tr height="20" style="20px">
+									<td colspan="5"><br></td>
+								</tr> -->
+							</table>
+						</td>
+					</tr>
+				<tr>
+					<td background="assets/bg_total_savings@2x.png" style="background:url(assets/bg_total_savings@2x.png) center/cover;background-image:url(assets/bg_total_savings@2x.png);background-size:100%;background-size:cover; border:0px; border:0px; height:140px; padding: 0px; margin: 0px" height="140" bgcolor="#ffffff" height="140" border="0" valign="top" align="center" class="your-price-tag">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+							<v:fill type="tile" src="assets/bg_total_savings@2x.png" color="#ffffff" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						<![endif]-->
+						<div style="height: 140px; width: 100%; margin: 0px; padding: 0px;">
+
+							<table width="90%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td valign="middle" width="70%" align="center">
+										<table width="100%" cellspacing="0" cellpadding="0" border="1" style="border: 1px solid #DDD; border-radius: 40px; height: 70px; width: 100%; margin: 0px auto display: block;" class="bg-total-border-wrapper">
+											<tr>
+												<td width="20%" align="center" valign="middle">
+													<img src="assets/ic_save@2x.png" alt="Logo" width="80" height="80" style="max-width: 80px; width: 80px; hieght: 80px; border:0px" border="0" class="basil-img">
+												</td>
+												<td valign="middle" width="40%">
+													<font style="font-family: Helvetica, Arial, sans-serif; color: #656565; font-size: 18px; text-transform: uppercase; font-weight: bold; display: block; margin: 0px; padding: 5px 0px 0px 0px;" class="savings-for-last">Saving for the last 12 months</font>
+												</td>
+												<td width="40%" valign="middle" align="center">
+													<font style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #44b02b; font-size: 42px; font-weight: bold; display: block; margin: 0px auto; padding: 10px 0px 10px 0px;" class="savings-for-price">%24.00</font>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td valign="bottom" align="right" class="basil-img-wrapper">
+										<img src="assets/img_basil@2x.png" alt="Logo" width="auto" height="140" style="max-width: 145; width: auto; hieght: auto; border:0px" border="0" class="basil-img">
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if gte mso 9]>
+							</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="800" cellspacing="0" cellpadding="0" border="0" class="responsive-table" bgcolor="#016a54" style="background-color: #016a54; border:0px;">
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td valign="middle">
+									<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center"  class="responsive-table-child" bgcolor="#016a54" style="background-color: #016a54; border:0px;">
+										<tr>
+											<td align="left" valign="bottom" width="60">
+													<a href="#" title="feedback" style="border: 0px; width: 48px; height: 48px; outline: none;" social-icon-link><img src="assets/ic_feedback@2x.png" alt="feedback" width="30" height="28" style="max-width: 30px; width: 30px; hieght: 28px; border:0px" border="0" class="social-feedback-img"></a>
+											</td>
+											<td align="left" valign="bottom" style="padding-left: 30px; text-align: center"  class="social-icon-name-wrapper">
+												<font style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; display: block; margin: 0px auto; padding:10px 0px; text-transform: uppercase;" class="social-icon-name">Scan Loyality Card</font>
+											</td>
+											<td align="center" valign="middle" width="60" class="social-icons-wrapper" style="width: 60px;">
+												<a href="#" title="facebook" style="border: 0px; width: 48px; height: 48px; outline: none;" social-icon-link><img src="assets/icn_facebook@2x.png" alt="facebook" width="48" height="48" style="max-width: 48px; width: 48px; hieght: 48px; border:0px" border="0" class="social-icons-img"></a>
+											</td>
+											<td align="center" valign="middle" width="60" class="social-icons-wrapper" style="width: 60px;">
+												<a href="#" title="twitter" style="border: 0px; width: 48px; height: 48px; outline: none;" social-icon-link><img src="assets/icn_twitter@2x.png" alt="twitter" width="48" height="48" style="max-width: 48px; width: 48px; hieght: 48px; border:0px;" border="0" class="social-icons-img"></a>
+											</td>
+											<td align="center" valign="middle" width="60" class="social-icons-wrapper" style="width: 60px;">
+												<a href="#" title="pinterest" style="border: 0px; width: 48px; height: 48px; outline: none;" social-icon-link><img src="assets/icn_pinterest@2x.png" alt="pinterest" width="48" height="48" style="max-width: 48px; width: 48px; hieght: 48px; border:0px" border="0" class="social-icons-img"></a>
+											</td>
+											<td align="center" valign="middle" width="60" class="social-icons-wrapper" style="width: 60px;">
+												<a href="#" title="instagram" style="border: 0px; width: 48px; height: 48px; outline: none;" social-icon-link><img src="assets/icn_instagram@2x.png" alt="Logo" width="48" height="48" style="max-width: 48px; width: 48px; hieght: 48px; border:0px" border="0" class="social-icons-img"></a>
+											</td>
+										</tr>
+									</table
+								</td>
+
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="800" cellspacing="0" cellpadding="15" border="0" class="responsive-table" style="border:0px;">
+							<tr>
+								<td align="center">
+									<a href="#" title="Manage Email Preferences" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif;text-decoration: none; text-transform: uppercase; font-size: 14px; color: #44b02b !important" social-icon-link>Manage Email Preferences | </a>
+									<a href="#" title="Unsubscribe" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif;text-decoration: none; text-transform: uppercase; font-size: 14px; color: #44b02b !important" social-icon-link>Unsubscribe | </a>
+									<a href="#" title="Contact Us" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif;text-decoration: none; text-transform: uppercase; font-size: 14px; color: #44b02b !important" social-icon-link>Contact Us | </a>
+									<a href="#" title="Privacy Policy" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif;text-decoration: none; text-transform: uppercase; font-size: 14px; color: #44b02b !important" social-icon-link>Privacy Policy | </a>
+									<a href="#" title="Terms &amp; Conditions" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif;text-decoration: none; text-transform: uppercase; font-size: 14px; color: #44b02b !important" social-icon-link>Terms &amp; Conditions</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									<font href="#" title="Manage Email Preferences" style="border: 0px; outline: none; font-family: Helvetica, Arial, San-serif; font-size: 14px; color: #737373 !important" social-icon-link>This email was sent to youme@yahoo.com<br>
+									&copy; Copyrights 2018 SpartanNash. All Rights Reserved.
+									</font>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
